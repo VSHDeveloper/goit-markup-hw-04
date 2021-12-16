@@ -254,6 +254,9 @@ img {
 .cards > li {
   background-color: var(--background-color);
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .cards > li:last-child {
   margin: 0;
@@ -274,11 +277,7 @@ img {
   margin-top: 50px;
   justify-content: center;
 }
-/* .client-list {
-  display: flex;
-  width: 170px;
-  height: 92px;
-} */
+
 .client-link {
   display: flex;
   width: 170px;
@@ -289,10 +288,23 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.group-one {
-  width: 41px;
-  height: 46.7px;
+
+.client-cards > li + li {
+  margin-left: 30px;
 }
+
+.client-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.group-one {
+  fill: #afb1b8;
+  padding: 22px 25px 22px 25px;
+}
+.group-one:hover {
+  fill: var(--accent-color);
+}
+
 /* futer */
 .futer {
   background-color: var(--background-hero-futer);
