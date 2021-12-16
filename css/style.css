@@ -10,7 +10,7 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --accent-color-hover: #188ce8;
+  --accent-color-hover-button: #188ce8;
   --primery-wite-color: #ffffff;
   --background-color: #ffffff;
   --background-hero-futer: #2f303a;
@@ -165,7 +165,7 @@ img {
 .button:hover,
 .button:focus {
   color: var(--primery-wite-color);
-  background-color: var(--accent-color-hover);
+  background-color: var(--accent-color-hover-button);
   font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
@@ -262,6 +262,37 @@ img {
   padding: 30px 0;
 }
 
+/* Regular clients */
+.clients {
+  font-size: 16px;
+  line-height: 1.19;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-cards {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+/* .client-list {
+  display: flex;
+  width: 170px;
+  height: 92px;
+} */
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.group-one {
+  width: 41px;
+  height: 46.7px;
+}
 /* futer */
 .futer {
   background-color: var(--background-hero-futer);
