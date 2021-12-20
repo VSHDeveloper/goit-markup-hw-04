@@ -81,6 +81,9 @@ img {
 .logo-top {
   color: #000000;
 }
+.logo-top:focus {
+  color: #000000;
+}
 .logo-doun {
   color: var(--primery-wite-color);
 }
@@ -105,6 +108,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -129,18 +133,21 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
+  cursor: pointer;
 }
 .link-info:hover,
 .link-info:focus {
   color: var(--accent-color);
 }
+.link-info:hover > svg,
+.link-info:focus > svg {
+  fill: var(--accent-color);
+}
 .site-icon {
   display: flex;
   fill: var(--primery-text-color);
   margin-right: 10px;
-}
-.site-icon:hover {
-  fill: var(--accent-color);
 }
 
 /* hero */
@@ -279,7 +286,6 @@ img {
 }
 .cards {
   display: flex;
-  /* justify-content: space-between; */
   margin-top: 50px;
 }
 .cards > li {
@@ -293,7 +299,37 @@ img {
   margin: 0;
 }
 .description {
-  padding: 30px 0;
+  padding: 30px 0 16px;
+}
+.social-team {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.link-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-team > .link-team + .link-team {
+  margin-left: 10px;
+}
+.link-team:hover,
+.link-team:focus {
+  background-color: var(--accent-color);
+}
+.link-team:hover > svg,
+.link-team:focus > svg {
+  fill: var(--primery-wite-color);
+}
+.social-icon-team {
+  fill: currentColor;
 }
 
 /* Regular clients */
@@ -320,27 +356,38 @@ img {
   cursor: pointer;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: #afb1b8;
 }
-.client-cards > :hover svg,
-:focus svg {
-  fill: var(--accent-color);
-}
+
 .client-link:hover {
   border: 1px solid var(--accent-color);
 }
-
+.client-link:hover > svg,
+.client-link:focus > svg {
+  fill: var(--accent-color);
+}
 .group-one {
-  fill: #afb1b8;
+  fill: currentColor;
+}
+.group-one:hover,
+.group-one:focus {
+  fill: var(--accent-color);
 }
 
 /* futer */
 .futer {
+  display: flex;
   background-color: var(--background-color-futer);
-  height: 252px;
+  /* height: 252px; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.section-futer {
+  display: flex;
+}
+.logo-futer {
+  margin-right: 70px;
+}
 .futer-text {
   color: var(--primery-wite-color);
   display: block;
@@ -357,7 +404,46 @@ img {
 .list > li {
   padding-top: 9px;
 }
+.social {
+  display: flex;
+  flex-direction: column;
+}
+.social-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primery-wite-color);
+}
+.social-links {
+  display: flex;
+  margin-top: 20px;
+}
+.social-links li + li {
+  margin-left: 10px;
+}
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--primery-wite-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.socisl-icon {
+  fill: currentColor;
+}
+.socisl-icon:focus {
+  fill: currentColor;
+}
 /* portfolio */
 .line {
   border-bottom: 1px solid #eeeeee;
@@ -392,6 +478,9 @@ img {
   font-family: inherit;
   border: none;
   padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .button-nav:hover,
 .button-nav:focus {
@@ -407,14 +496,18 @@ img {
   margin-left: -30px;
   /* outline: 2px solid tomato; */
 }
-
-.item {
-  /* outline: 2px solid orangered; */
+.link-item {
+  cursor: pointer;
   margin-top: 30px;
   margin-left: 30px;
 }
+.link-item:hover,
+.link-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
-.item {
+.link-item {
   flex-basis: calc(100% / 3 - 30px);
 }
 /* .item:nth-child(3n + 1) {
