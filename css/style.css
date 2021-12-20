@@ -163,7 +163,7 @@ img {
       var(--background-image-hero),
       var(--background-image-hero)
     ),
-    url(/images/Img\(1\).jpg);
+    url(/images/img1.jpg);
 }
 .hero .title {
   color: var(--primery-wite-color);
