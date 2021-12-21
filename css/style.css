@@ -196,16 +196,6 @@ img {
 .button:focus {
   color: var(--primery-wite-color);
   background-color: var(--accent-color-hover-button);
-  /* font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  margin: auto;
-  margin-top: 30px; */
 }
 
 /* features, works, */
