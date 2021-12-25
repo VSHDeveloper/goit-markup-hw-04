@@ -111,7 +111,6 @@ img {
   cursor: pointer;
 }
 .site-nav .link:hover,
-.site-nav .link:active,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
